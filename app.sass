@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton|Signika+Negative')
+
+
+
+$f-stack: 'Monoton', cursive
+$f-stack2: 'Signika Negative', sans-serif
+
+
+
+=gridDisplay($col,$gap)
+	display: grid
+	grid-template-columns: $col
+	grid-gap: $gap
+
+=flexDisplay($direction,$justifyContent,$alignItem)
+	display: flex
+	flex-direction: $direction
+	justify-content: $justifyContent
+	align-items: $alignItem
+
+=boxes()
+	border: 2px solid black
+	padding: 5px
+=btnPlay()
+	padding: 5px 10px
+	border: transparent
+	background: #26c6da
+	border-radius: 5px
+
+//////////////////////
+
+body          
+
+header
+	h1
+		font-family: $f-stack
+		font-size: 2.5em
+		text-align: center
+main
+	+gridDisplay(repeat(3,1fr),10px)
+	div
+		+boxes()
+		&:first-child
+			+flexDisplay(column,center,center)
+		&:nth-child(2)
+			+flexDisplay(row,center,center)
+			.cat-img
+				position: relative
+				top: 85px
+			.chat-img
+				position: absolute
+				top: 175px
+				opacity: 0
+			.hello-img
+				position: absolute
+				top: 362px
+				opacity: 0		
+			.cat-btn
+				position: absolute
+				top: 485px
+
+	
+	.sun
+		position: absolute
+		opacity: 0
+	h3
+		font-family: $f-stack2
+	.btn-play
+		+btnPlay()
+		&:hover
+			cursor: pointer
+			transform: scale(1.1)
+			transition: transform .5s

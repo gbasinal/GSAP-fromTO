@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Banner Animation</title>
+	<link rel="stylesheet" href="app.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="app.js"></script>
+</head>
+<body>
+	<header>
+		<h1> Practice Animations using the fromTo property</h1>
+	</header>
+	<main>
+		<div>
+			<svg class="sun" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="400px"
+				 height="300px" viewBox="0 0 400 300" enable-background="new 0 0 400 300" xml:space="preserve">
+			<g id="Layer_2">
+				<path fill="#F9ED32" stroke="#231F20" stroke-miterlimit="10" d="M158,107.667c5.333-34.333,4.667-33,4.667-33l25,15.333
+					L210,69.333l16.667,25.333l30-1.667c0,0-8.666,21.667-9.333,22.667s-2,2.667-2,2.667L278,138l-33.666,12l-12,40L217,173.667
+					c0,0-15.332,31-15.666,30S187,176,187,176l-39.333,4l12.667-19.333L122.667,145l27.667-14L128,91.333L158,107.667z"/>
+			</g>
+			<g id="Layer_1">
+				<ellipse fill="#FBB040" stroke="#231F20" stroke-miterlimit="10" cx="199.333" cy="133" rx="48.5" ry="44"/>
+			</g>
+			</svg>			
+			<svg class="mountain" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 width="400px" height="300px" viewBox="0 0 400 300" enable-background="new 0 0 400 300" xml:space="preserve">
+			<g>
+				<polygon fill="#808285" points="33.389,227.594 134.635,102.418 188.989,203.5 254.534,59.995 385.088,239.115 24.863,239.115 	"/>
+				<path fill="#231F20" d="M386.687,239.922H23.251l9.474-12.803L134.774,100.95l54.154,100.712L254.37,58.385l0.83,1.141
+					L386.687,239.922z M26.475,238.309h357.017L254.697,61.604L189.05,205.339l-54.553-101.453L34.031,228.096L26.475,238.309z"/>
+			</g>
+			<g>
+				<polygon fill="#FFFFFF" points="234.153,104.948 246.053,116.24 253.438,105.352 262.465,115.03 265.747,106.158 273.133,115.433 
+					287.904,105.352 254.534,59.995 	"/>
+				<path fill="#231F20" d="M246.19,117.492l-13.022-12.356l21.196-46.748l34.695,47.158l-16.096,10.985l-6.95-8.73l-3.239,8.755
+					l-9.234-9.9L246.19,117.492z M235.137,104.761l10.777,10.228l7.421-10.941l8.82,9.458l3.325-8.989l7.82,9.82l13.448-9.179
+					l-32.046-43.556L235.137,104.761z"/>
+			</g>
+			<g>
+				<polygon fill="#FFFFFF" points="111.878,130.355 121.315,144.873 128.701,133.581 134.856,144.47 138.138,133.581 145.935,145.68 
+					154.141,138.421 134.635,102.418 	"/>
+				<path fill="#231F20" d="M145.761,146.918l-7.351-11.405l-3.324,11.027l-6.437-11.388l-7.337,11.216l-10.443-16.066l23.904-29.344
+					l20.393,37.641L145.761,146.918z M137.866,131.65l8.241,12.792l7.008-6.199l-18.619-34.364l-21.61,26.53l8.432,12.969l7.435-11.367
+					l5.872,10.389L137.866,131.65z"/>
+			</g>
+			</svg>	
+			<h3>Animation using the fromTo property</h3>
+			<button class="btn-play" id="play1">Play Again</button>	
+		</div>
+		<div>
+			<button class="btn-play cat-btn" id="play2">Play Again</button>
+			<img src="cat.png" alt="" class="cat-img">
+			<img src="chat.png" alt="" class="chat-img">
+			<img src="hello.png" alt="" class="hello-img">
+			<img src="baby.png" alt="" class="dog-img">	
+		</div>	
+		<div>&nbsp;</div>
+	</main>
+</body>
+</html>
